@@ -1,0 +1,25 @@
+﻿<Properties GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_core\WeaponsSystems\weaponSystem.cs">
+    <Files>
+      <File FileName="Assets\_core\Done_Scripts\Done_PlayerController.cs" Line="148" Column="14" />
+      <File FileName="Assets\_core\WeaponsSystems\weaponSystem.cs" Line="111" Column="5" />
+      <File FileName="Assets\InControl\Source\Device\InputDevice.cs" Line="1" Column="1" />
+      <File FileName="Assets\InControl\Source\Unity\DeviceProfiles\XboxOneWinProfile.cs" Line="1" Column="1" />
+      <File FileName="Assets\_core\Controls\shipActions.cs" Line="1" Column="1" />
+      <File FileName="Assets\_core\WeaponsSystems\ComposedWeapon.cs" Line="1" Column="1" />
+      <File FileName="Assets\_core\Done_Scripts\Done_Mover.cs" Line="1" Column="1" />
+      <File FileName="Assets\_core\Done_Scripts\Done_DestroyByTime.cs" Line="1" Column="1" />
+      <File FileName="Assets\_core\Done_Scripts\Done_GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets\_core\Done_Scripts\Done_BGScroller.cs" Line="1" Column="1" />
+      <File FileName="Assets\_core\Done_Scripts\Done_DestroyByContact.cs" Line="42" Column="1" />
+      <File FileName="Assets\CameraTrack.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Assets\Done\Done_Scripts\Done_PlayerController.cs" line="112" offsetX="489" offsetY="2109" expression="shotSpawn0" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>
