@@ -92,12 +92,12 @@ public class Done_PlayerController : MonoBehaviour
 			m [1] = true;
 		}
 
-		if (bcn.tL.RawValue > 0) 
+		if (bcn.tL.IsPressed) 
 		{
 			m [2] = true;
 		}
 
-		if (bcn.tR.RawValue > 0) 
+		if (bcn.tR.IsPressed) 
 		{
 			m [3] = true;
 		}
