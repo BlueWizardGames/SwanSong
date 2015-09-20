@@ -32,21 +32,21 @@ public class Done_PlayerController : MonoBehaviour
 	private ComposedWeapon weaponRB;
 	private ComposedWeapon archetyp;
 	private ShipActions bcn;
-
+	
 	void Start ()
 	{
 		// instantiate composed weapons here.
 		weaponRT = WCore.composeWeapon (WCore.burstFire(4, 0.1f, 0.4f),
 		                                WCore.defaultFire(),
 		                                WCore.smoothedActuation(.07f,
-		                    		    .2f,
-		                        		.3f),
+		                        .2f,
+		                        .3f),
 		                                shot0);
 		weaponLT = WCore.composeWeapon (WCore.burstFire(2, 0.05f, 0.5f),
 		                                WCore.defaultFire(),
 		                                WCore.smoothedActuation(.07f,
-		                        		.2f,
-		                        		.3f),
+		                        .2f,
+		                        .3f),
 		                                shot1);
 		weaponRB = WCore.composeWeapon (WCore.defaultCooldown(0.02f),
 		                                WCore.angleFire(45),
@@ -59,8 +59,8 @@ public class Done_PlayerController : MonoBehaviour
 		archetyp = WCore.composeWeapon (WCore.burstFire (40, 0.001f, 10f),
 		                                WCore.triFire (20),
 		                                WCore.smoothedActuation (.1f,
-		                         		.2f,
-		                       			.5f),
+		                         .2f,
+		                         .5f),
 		                                shot4);
 		bcn = new ShipActions ();
 		bcn.bL.AddDefaultBinding (InputControlType.LeftBumper);
@@ -83,21 +83,21 @@ public class Done_PlayerController : MonoBehaviour
 	{
 		bool[] m = new bool[4]{false, false, false, false}; 
 		bool weaponsLocked = false;
-
+		
 		if (bcn.bL.IsPressed) {
 			m [0] = true;
 		}
-
+		
 		if (bcn.bR.IsPressed) {
 			m [1] = true;
 		}
-
+		
 		if (bcn.tL.IsPressed) 
 		{
 			m [2] = true;
 		}
-
-		if (bcn.tR.IsPressed) 
+		
+		if (bcn.tR.RawValue > 0) 
 		{
 			m [3] = true;
 		}
@@ -108,37 +108,37 @@ public class Done_PlayerController : MonoBehaviour
 			m[2] = false; m[3] = false;
 			weaponsLocked = true;
 		}
-
+		
 		if (m[0]
 		    && !weaponsLocked) {
 			weaponLB.shootFrom(shotSpawn0);	
 		}
-
+		
 		if (m[1]
 		    && !weaponsLocked) {
 			weaponRB.shootFrom(shotSpawn1);
 		}
-
+		
 		if ( m[2] && !m[0]
 		    && !weaponsLocked) {
 			weaponLT.shootFrom(shotSpawn0);
 		}
-
+		
 		if (m[3] && !m[1]
 		    && !weaponsLocked) {
 			weaponRT.shootFrom(shotSpawn1);
 		}
-				
+		
 		if (weaponsLocked) {
 			archetyp.shootFrom (shotSpawn2);
 		}
-
+		
 		
 	}
 	
 	void FixedUpdate ()
 	{
-
+		
 		float t = 0;
 		float moveHorizontal = bcn.mAxs.X;
 		float moveVertical = bcn.mAxs.Y;
@@ -151,7 +151,7 @@ public class Done_PlayerController : MonoBehaviour
 		
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 		GetComponent<Rigidbody> ().velocity = (movement * speed);
-
+		
 		float rotY = bcn.aAxs.Y;
 		float rotX = bcn.aAxs.X;
 		if ((Mathf.Abs (rotX) + Mathf.Abs (rotY)) > .9) {

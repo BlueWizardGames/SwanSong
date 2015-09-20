@@ -1,9 +1,9 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_core\Done_Scripts\Done_PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\YesWildcatsGoYes\Documents\TauntingJereme\Assets\InControl\Source\Utility\TinyJSON.cs">
     <Files>
-      <File FileName="Assets\_core\Done_Scripts\Done_PlayerController.cs" Line="68" Column="39" />
-      <File FileName="Assets\_core\WeaponsSystems\weaponSystem.cs" Line="60" Column="3" />
+      <File FileName="Assets\_core\Done_Scripts\Done_PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\_core\WeaponsSystems\weaponSystem.cs" Line="1" Column="1" />
       <File FileName="Assets\InControl\Source\Device\InputDevice.cs" Line="1" Column="1" />
       <File FileName="Assets\InControl\Source\Unity\DeviceProfiles\XboxOneWinProfile.cs" Line="1" Column="1" />
       <File FileName="Assets\_core\Controls\shipActions.cs" Line="1" Column="1" />
@@ -14,6 +14,9 @@
       <File FileName="Assets\_core\Done_Scripts\Done_BGScroller.cs" Line="1" Column="1" />
       <File FileName="Assets\_core\Done_Scripts\Done_DestroyByContact.cs" Line="1" Column="1" />
       <File FileName="Assets\CameraTrack.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\YesWildcatsGoYes\Documents\TauntingJereme\Assets\Standard Assets\Utility\PlatformSpecificContent.cs" Line="21" Column="51" />
+      <File FileName="c:\Users\YesWildcatsGoYes\Documents\TauntingJereme\Assets\InControl\Source\VersionInfo.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\YesWildcatsGoYes\Documents\TauntingJereme\Assets\InControl\Source\Utility\TinyJSON.cs" Line="912" Column="65" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
