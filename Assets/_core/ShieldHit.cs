@@ -21,6 +21,7 @@ public class ShieldHit : MonoBehaviour {
 			Destroy (other.gameObject);
 			scale -= 0.05f;
 		}
+
 	}
 	// Update is called once per frame
 	void Update () {
