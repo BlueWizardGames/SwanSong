@@ -8,6 +8,7 @@ public class BodyHit : MonoBehaviour {
 	private float sRcc; //
 	private CapsuleCollider refT;
 	public GameObject explosion;
+	private int hitCounter = 0;
 
 	void Awake()
 	{
@@ -21,9 +22,11 @@ public class BodyHit : MonoBehaviour {
 	{
 		if (other.tag == "shot") {
 			Destroy (other.gameObject);
-			if (explosion != null) {
+			if (explosion != null && hitCounter > 3) {
 				Instantiate (explosion, transform.position, transform.rotation);
+				Destroy(this.gameObject);
 			}
+			hitCounter++;
 		}
 	}
 

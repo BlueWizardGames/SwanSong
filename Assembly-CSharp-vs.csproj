@@ -214,6 +214,8 @@
      <Compile Include="Assets\_core\WeaponsSystems\ComposedWeapon.cs" />
      <Compile Include="Assets\_core\WeaponsSystems\weaponSystem.cs" />
      <Compile Include="Assets\destroySlightlyAfterHit.cs" />
+     <Compile Include="Assets\simpleEnemyMover.cs" />
+     <Compile Include="Assets\spawnShitlords.cs" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
      <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\InControl\Readme\README.txt" />
